@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { Link, useNavigate } from 'react-router-dom'
 import { Container,Logo, LogoutBtn } from '../index'
 import React from 'react'
@@ -37,7 +36,8 @@ const Header = () => {
   },
   ]
   return (
-    <header className='py-34 shadow bg-gray-500 '>
+    <header className='py-34 shadow bg-gray-500'>
+      
       <Container>
         <nav className='flex'>
           <div className='mr-4 '>
@@ -57,6 +57,8 @@ const Header = () => {
               </li>
               : null
             })}
+
+
             {authStatus && (
               <li><LogoutBtn/></li>
             )}
